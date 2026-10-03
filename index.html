@@ -25,22 +25,25 @@
   }
   </script>
   <style>
-    :root { color-scheme: light; --ink:#1c2430; --muted:#5c6775; --line:#e4e8ee; --bg:#f6f7f9; --card:#fff; --accent:#1a3a4a; }
+    :root { color-scheme: light; --ink:#1a2420; --muted:#5c6862; --line:#e2ddd4; --bg:#f4f2ed; --card:#fffcf8; --accent:#1c4a38; }
     * { box-sizing: border-box; }
-    body { margin:0; font-family: Georgia, "Times New Roman", serif; color:var(--ink); background:var(--bg); line-height:1.55; }
-    header, main, footer { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
-    header { padding: 2.5rem 1.25rem 1rem; }
-    .kicker { font-family: system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; font-size: .72rem; color: var(--muted); margin: 0 0 .4rem; }
-    h1 { font-weight: 500; font-size: 2rem; margin: 0; letter-spacing: -.02em; }
-    h2 { font-family: system-ui, sans-serif; font-size: .95rem; font-weight: 650; margin: 0 0 .6rem; }
-    .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.35rem; margin: 1rem 0; }
-    p { margin: .4rem 0; }
+    body { margin:0; font-family: "Segoe UI", system-ui, -apple-system, sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; font-size:1.02rem; }
+    body::before { content:""; display:block; height:4px; background:var(--accent); }
+    header, main, footer { max-width: 40rem; margin: 0 auto; padding: 0 1.5rem; }
+    header { padding: 2.75rem 1.5rem .35rem; }
+    .kicker { letter-spacing: .16em; text-transform: uppercase; font-size: .7rem; color: var(--muted); margin: 0 0 .55rem; }
+    h1 { font-weight: 560; font-size: 1.9rem; margin: 0; letter-spacing: -.025em; line-height: 1.15; }
+    h2 { font-size: .75rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 .75rem; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.35rem 1.5rem 1.45rem; margin: 1.05rem 0; }
+    p { margin: .55rem 0; }
     dl { margin: 0; }
-    dt { font-family: system-ui, sans-serif; font-size: .75rem; color: var(--muted); margin-top: .7rem; }
-    dd { margin: .1rem 0 0; }
-    a { color: var(--accent); }
-    .en { font-family: system-ui, sans-serif; font-size: .95rem; color: #2a3340; }
-    footer { font-family: system-ui, sans-serif; font-size: .8rem; color: var(--muted); padding: 1rem 1.25rem 2.5rem; }
+    dt { font-size: .72rem; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-top: 1rem; }
+    dt:first-child { margin-top: 0; }
+    dd { margin: .15rem 0 0; }
+    ul { margin: .5rem 0; padding-left: 1.2rem; }
+    a { color: var(--accent); text-underline-offset: .16em; }
+    .en { color: #24302b; }
+    footer { font-size: .8rem; color: var(--muted); line-height: 1.7; padding: 1.15rem 1.5rem 2.75rem; border-top: 1px solid var(--line); margin-top: .4rem; }
   </style>
 </head>
 <body>
