@@ -6,32 +6,91 @@
   <title>Privacidad — INVERORION S.A.S</title>
   <meta name="description" content="Política de privacidad de INVERORION S.A.S para mensajes de WhatsApp.">
   <style>
-    :root { color-scheme: light; --ink:#1a2420; --muted:#5c6862; --line:#e2ddd4; --bg:#f4f2ed; --card:#fffcf8; --accent:#1c4a38; }
+    :root {
+      --ink: #14201c;
+      --muted: #5a6b63;
+      --line: #d9e0db;
+      --bg: #eef2ef;
+      --card: #ffffff;
+      --accent: #0f4c3a;
+      --accent-soft: #e4f0ea;
+      --gold: #c4a574;
+    }
     * { box-sizing: border-box; }
-    body { margin:0; font-family: "Segoe UI", system-ui, -apple-system, sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; font-size:1.02rem; }
-    body::before { content:""; display:block; height:4px; background:var(--accent); }
-    header, main, footer { max-width: 40rem; margin: 0 auto; padding: 0 1.5rem; }
-    header { padding: 2.75rem 1.5rem .35rem; }
-    .kicker { letter-spacing: .16em; text-transform: uppercase; font-size: .7rem; color: var(--muted); margin: 0 0 .55rem; }
-    h1 { font-weight: 560; font-size: 1.9rem; margin: 0; letter-spacing: -.025em; line-height: 1.15; }
-    h2 { font-size: .75rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 .75rem; }
-    .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.35rem 1.5rem 1.45rem; margin: 1.05rem 0; }
-    p { margin: .55rem 0; }
-    dl { margin: 0; }
-    dt { font-size: .72rem; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-top: 1rem; }
-    dt:first-child { margin-top: 0; }
-    dd { margin: .15rem 0 0; }
-    ul { margin: .5rem 0; padding-left: 1.2rem; }
+    body { margin: 0; font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.65; font-size: 1.05rem; }
     a { color: var(--accent); text-underline-offset: .16em; }
+
+    .topbar {
+      background: var(--card);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner {
+      max-width: 720px; margin: 0 auto; padding: .85rem 1.5rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; color: inherit; }
+    .mark {
+      width: 2.4rem; height: 2.4rem; border-radius: 8px;
+      background: linear-gradient(145deg, var(--accent), #1a6b52);
+      color: #fff; font-weight: 700; font-size: .85rem;
+      display: grid; place-items: center;
+    }
+    .brand-text strong { display: block; font-size: .95rem; }
+    .brand-text span { display: block; font-size: .72rem; color: var(--muted); }
+    .back { font-size: .9rem; font-weight: 500; text-decoration: none; color: var(--ink); }
+    .back:hover { color: var(--accent); }
+
+    .page-head {
+      max-width: 720px; margin: 0 auto; padding: 2.5rem 1.5rem .5rem;
+    }
+    .eyebrow {
+      display: inline-block; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--accent); margin: 0 0 .6rem;
+    }
+    .page-head h1 { margin: 0; font-size: clamp(1.6rem, 3.5vw, 2rem); letter-spacing: -.02em; }
+    .rule { width: 3rem; height: 3px; background: var(--gold); border: 0; margin: 1rem 0 0; }
+
+    main { max-width: 720px; margin: 0 auto; padding: 0 1.5rem 1rem; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+      padding: 1.4rem 1.45rem 1.5rem; margin: 1.15rem 0;
+      box-shadow: 0 1px 2px rgba(20,32,28,.04);
+    }
+    h2 {
+      margin: 0 0 .75rem; font-size: .78rem; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase; color: var(--accent);
+    }
+    p { margin: .55rem 0; }
     .en { color: #24302b; }
-    footer { font-size: .8rem; color: var(--muted); line-height: 1.7; padding: 1.15rem 1.5rem 2.75rem; border-top: 1px solid var(--line); margin-top: .4rem; }
+
+    footer {
+      margin-top: 2rem; background: #0f1f1a; color: rgba(245,250,247,.78);
+      padding: 1.5rem 1.5rem 2.25rem; font-size: .88rem; line-height: 1.75;
+    }
+    .footer-inner { max-width: 720px; margin: 0 auto; }
+    footer a { color: #d4e8de; }
   </style>
 </head>
 <body>
-  <header>
-    <p class="kicker">Colombia · Medellín</p>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="mark" aria-hidden="true">IO</span>
+        <span class="brand-text">
+          <strong>INVERORION S.A.S</strong>
+          <span>Medellín · Colombia</span>
+        </span>
+      </a>
+      <a class="back" href="index.html">← Inicio</a>
+    </div>
+  </div>
+
+  <header class="page-head">
+    <p class="eyebrow">Tratamiento de datos</p>
     <h1>Política de privacidad</h1>
+    <hr class="rule">
   </header>
+
   <main>
     <section class="card">
       <h2>Responsable</h2>
@@ -57,8 +116,14 @@
       <p>To ask for your data to be deleted, email <a href="mailto:305martian@gmail.com">305martian@gmail.com</a>, under Colombia’s personal data law (Ley 1581 de 2012).</p>
     </section>
   </main>
+
   <footer>
-    INVERORION S.A.S · NIT 902045728-9 · <a href="tel:+573002114913">+57 300 211 4913</a> WhatsApp · <a href="index.html">Inicio</a> · <a href="mailto:305martian@gmail.com">305martian@gmail.com</a>
+    <div class="footer-inner">
+      INVERORION S.A.S · NIT 902045728-9 ·
+      <a href="tel:+573002114913">+57 300 211 4913</a> WhatsApp ·
+      <a href="index.html">Inicio</a> ·
+      <a href="mailto:305martian@gmail.com">305martian@gmail.com</a>
+    </div>
   </footer>
 </body>
 </html>
